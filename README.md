@@ -1,4 +1,4 @@
-\# 🏎️ Formula 1 Analytics \& Prediction System (C++)
+ 🏎️ Formula 1 Analytics \& Prediction System (C++)
 
 
 
@@ -8,7 +8,7 @@ simulates championships, and provides strategy recommendations.
 
 
 
-\## 🚀 Features
+## 🚀 Features
 
 
 
@@ -36,7 +36,7 @@ simulates championships, and provides strategy recommendations.
 
 
 
-\## 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 
 
@@ -52,11 +52,11 @@ simulates championships, and provides strategy recommendations.
 
 
 
-\## ▶️ How to Run
+## ▶️ How to Run
 
 
 
-\### Terminal App
+### Terminal App
 
 ```bash
 
@@ -72,9 +72,8 @@ g++ backend/server.cpp src/DataManager.cpp src/Driver.cpp src/Race.cpp src/Resul
 
 Then open in browser:
 
-
-
 http://localhost:8080
+
 
 📂 Project Structure
 
@@ -90,31 +89,4 @@ database/   → CSV datasets
 
 Deepak (AlexZx-05)
 
-
-
-
-
-Save it.
-
-
-
----
-
-
-
-\## 🔹 STEP 2 — Push README to GitHub
-
-
-
-Run:
-
-
-
-```bash
-
-git add README.md
-
-git commit -m "Add project documentation"
-
-git push
 
