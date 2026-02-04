@@ -1,0 +1,15 @@
+# Executables
+f1
+server
+*.exe
+
+# Build files
+*.o
+*.out
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Reports
+f1_report.txt
