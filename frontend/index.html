@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>F1 Analytics Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ENGINE SOUND -->
+<audio id="engineSound">
+    <source src="assets/engine.mp3" type="audio/mpeg">
+</audio>
+
+
+<!-- ================= START SCREEN ================= -->
+
+<div id="start-screen">
+
+    <div class="start-wrapper">
+
+        <h1 class="start-title">FORMULA 1<br>ANALYTICS SYSTEM</h1>
+
+        <p class="start-sub">
+            Performance • Strategy • Intelligence
+        </p>
+
+        <button id="start-btn">LAUNCH SYSTEM</button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= SPLASH SCREEN ================= -->
+
+<div id="splash" style="display:none;">
+
+    <div class="splash-center">
+
+        <div class="track">
+            <img src="assets/f1_car.png" id="car-img" alt="F1 Car">
+        </div>
+
+        <h2>Initializing Race Systems...</h2>
+
+    </div>
+
+</div>
+
+
+<!-- ================= MAIN DASHBOARD ================= -->
+
+<div id="main" style="display:none;">
+
+
+<!-- ================= TOP BAR ================= -->
+
+<header class="topbar">
+
+    <div class="brand">
+        F1<span>Analytics</span>
+    </div>
+
+    <div class="status-bar">
+
+        <div class="status-item">
+            Track: <span id="track">--</span>
+        </div>
+
+        <div class="status-item">
+            Weather: <span id="weather">--</span>
+        </div>
+
+        <div class="status-item">
+            Laps: <span id="laps">--</span>
+        </div>
+
+        <div class="status-item">
+            Status: <span id="status">--</span>
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<main class="container">
+
+
+<!-- ================= KPI ROW ================= -->
+
+<section class="kpi-row">
+
+    <div class="kpi-card champion">
+        <h3>World Champion</h3>
+        <p id="champion">Loading...</p>
+    </div>
+
+    <div class="kpi-card prediction">
+        <h3>Next Race Winner</h3>
+        <p id="winner">Loading...</p>
+        <span id="confidence"></span>
+    </div>
+
+    <div class="kpi-card team">
+        <h3>Team Champion</h3>
+        <p id="team">Loading...</p>
+    </div>
+
+</section>
+
+
+<!-- ================= ANALYTICS GRID ================= -->
+
+<section class="analytics-grid">
+
+
+<!-- Rankings -->
+<div class="card wide">
+
+    <h2>Driver Rankings</h2>
+
+    <ul id="ranking"></ul>
+
+</div>
+
+
+<!-- Chart -->
+<div class="card wide">
+
+    <h2>Points Distribution</h2>
+
+    <canvas id="pointsChart"></canvas>
+
+</div>
+
+
+<!-- Tyre -->
+<div class="card">
+
+    <h2>Tyre Strategy</h2>
+
+    <p id="tyre">Loading...</p>
+    <p id="pit"></p>
+
+</div>
+
+
+<!-- Fuel -->
+<div class="card">
+
+    <h2>Fuel Strategy</h2>
+
+    <p id="fuel">Loading...</p>
+    <p id="save"></p>
+
+</div>
+
+
+</section>
+
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    © 2026 F1 Analytics System • Developed by Deepali
+
+</footer>
+
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
